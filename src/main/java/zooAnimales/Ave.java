@@ -32,6 +32,18 @@ public class Ave extends Animal{
 		Animal.setTotalAnimales();
 		return aguila;
 	}
+	public static int getHalcones() {
+		return halcones;
+	}
+	public static void setHalcones(int halcones) {
+		Ave.halcones = halcones;
+	}
+	public static int getAguilas() {
+		return aguilas;
+	}
+	public static void setAguilas(int aguilas) {
+		Ave.aguilas = aguilas;
+	}
 	@Override
 	public String movimiento() {
 		return "volar";

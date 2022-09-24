@@ -34,6 +34,22 @@ public class Anfibio extends Animal{
 		Animal.setTotalAnimales();
 		return salamandra;
 	}
+	public static int getRanas() {
+		return ranas;
+	}
+
+	public static void setRanas(int ranas) {
+		Anfibio.ranas = ranas;
+	}
+
+	public static int getSalamandras() {
+		return salamandras;
+	}
+
+	public static void setSalamandras(int salamandras) {
+		Anfibio.salamandras = salamandras;
+	}
+
 	@Override
 	public String movimiento() {
 		return "saltar";

@@ -39,6 +39,18 @@ public class Reptil extends Animal{
 		Animal.setTotalAnimales();
 		return serpiente;
 	}
+	public static int getIguanas() {
+		return iguanas;
+	}
+	public static void setIguanas(int iguanas) {
+		Reptil.iguanas = iguanas;
+	}
+	public static int getSerpientes() {
+		return serpientes;
+	}
+	public static void setSerpientes(int serpientes) {
+		Reptil.serpientes = serpientes;
+	}
 	public ArrayList<Reptil> getListado() {
 		return Reptil.listado;
 	}

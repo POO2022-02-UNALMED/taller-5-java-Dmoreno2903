@@ -21,7 +21,16 @@ public class Animal {
 	public Animal() {}
 	
 	public String movimiento() {
-		return "Desplazarse";
+		return "desplazarse";
+	}
+	public ArrayList<Zona> getZona() {
+		return zona;
+	}
+	public void setZona(ArrayList<Zona> zona) {
+		this.zona = zona;
+	}
+	public static void setTotalAnimales(int totalAnimales) {
+		Animal.totalAnimales = totalAnimales;
 	}
 	public static int getTotalAnimales() {
 		return totalAnimales;

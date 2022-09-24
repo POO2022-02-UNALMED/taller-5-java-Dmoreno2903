@@ -26,6 +26,15 @@ public class Zoologico {
 		}
 		return totalAnimales;
 	}
+	public ArrayList<Zona> getZonas() {
+		return zonas;
+	}
+	public void setZonas(ArrayList<Zona> zonas) {
+		this.zonas = zonas;
+	}
+	public ArrayList<Zona> getZona(){
+		return zonas;
+	}
 	public String getNombre() {
 		return nombre;
 	}

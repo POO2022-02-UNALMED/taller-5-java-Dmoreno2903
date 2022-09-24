@@ -32,6 +32,12 @@ public class Zona {
 		animal.setZona(this);
 	}
 	
+	public ArrayList<Animal> getAnimales() {
+		return animales;
+	}
+	public void setAnimales(ArrayList<Animal> animales) {
+		this.animales = animales;
+	}
 	public int cantidadAnimales() {
 		return animales.size();
 	}

@@ -2,8 +2,6 @@ package zooAnimales;
 
 import java.util.ArrayList;
 
-import gestion.Zona;
-
 public class Pez extends Animal{
 	private static ArrayList<Pez> listado = new ArrayList<Pez>();
 	public static int salmones;
@@ -28,7 +26,7 @@ public class Pez extends Animal{
 		Animal.setTotalAnimales();
 		return salmon;
 	}
-	public static Pez crearBacalao(String nombre, int edad, String genero, Zona[] zona) {
+	public static Pez crearBacalao(String nombre, int edad, String genero) {
 		Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
 		Pez.listado.add(bacalao);
 		Pez.salmones++;
