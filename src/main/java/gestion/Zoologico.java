@@ -16,6 +16,7 @@ public class Zoologico {
 	
 	public void agregarZonas(Zona zona) {
 		zonas.add(zona);
+		zona.setZoo(this);
 	}
 	
 	public int cantidadTotalAnimales() {
@@ -36,5 +37,8 @@ public class Zoologico {
 	}
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
-	}	
+	}
+	public String toString() {
+		return nombre;
+	}
 }

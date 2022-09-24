@@ -29,9 +29,14 @@ public class Zona {
 
 	public void agregarAnimales(Animal animal) {
 		animales.add(animal);
+		animal.setZona(this);
 	}
 	
 	public int cantidadAnimales() {
 		return animales.size();
+	}
+	
+	public String toString() {
+		return nombre;
 	}
 }

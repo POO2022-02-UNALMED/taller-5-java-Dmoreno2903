@@ -53,8 +53,11 @@ public class Animal {
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
+	public void setZona(Zona nZona) {
+		zona.add(nZona);
+	}
 	
-	public String totalPorTipo() {
+	public static String totalPorTipo() {
 		int nMamiferos = Mamifero.cantidadMamiferos();
 		int nAves = Ave.cantidadAves();
 		int nReptiles = Reptil.cantidadReptiles();
@@ -72,14 +75,14 @@ public class Animal {
 			return "Mi nombre es "+getNombre()+
 					", tengo una edad de "+getEdad()+
 					", habito en "+getHabitat()+
-					"y mi genero es "+getGenero()+
-					"la zona en la que me ubico es "+zona.get(0)+
-					", en el zoo "+zona.get(0).getZoo();
+					" y mi genero es "+getGenero()+
+					", la zona en la que me ubico es "+zona.get(0)+
+					", en el "+zona.get(0).getZoo();
 		}else {
 			return "Mi nombre es "+getNombre()+
 					", tengo una edad de "+getEdad()+
 					", habito en "+getHabitat()+
-					"y mi genero es "+getGenero();
+					" y mi genero es "+getGenero();
 		}
 	}
 	
